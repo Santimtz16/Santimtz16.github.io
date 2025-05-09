@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Unidad 3 || Actividad 1</title>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Santiago Martínez Reyes">
+        <meta name="Fecha" content="28/04/2025">
+        <meta name="Descripción" content="Operadores html">
+    </head>
+    <body>
+        <h2>Unidad 3 || Act 03 ::Tema (JavaScript)</h2>
+        <script>
+            /*
+            1.- Sumar
+            2.- Restar
+            3.- Multiplicar
+            4.- Dividir
+            */
+            let opc = window.prompt("Menú de opciones: \n1.- Sumar \n2.- Restar\n3.- Multiplicar \n4.- Dividir\n");
+            let val_1 = window.prompt("Dame el primer valor:");
+            let val_2 = window.prompt("Dame el segundo valor:");
+
+            // Convertir los valores a números flotantes
+            val_1 = parseFloat(val_1);
+            val_2 = parseFloat(val_2);
+
+            switch (opc) {
+                case "1": // Sumar
+                    document.write("<h3>Operación Suma</h3>");
+                    document.write("<code>" + val_1 + " + " + val_2 + " = " + (val_1 + val_2) + "</code>");
+                    break;
+
+                case "2": // Restar
+                    document.write("<h3>Operación Resta</h3>");
+                    document.write("<code>" + val_1 + " - " + val_2 + " = " + (val_1 - val_2) + "</code>");
+                    break;
+
+                case "3": // Multiplicar
+                    document.write("<h3>Operación Multiplicación</h3>");
+                    document.write("<code>" + val_1 + " x " + val_2 + " = " + (val_1 * val_2) + "</code>");
+                    break;
+
+                case "4": // Dividir
+                    if (val_2 !== 0) {
+                        document.write("<h3>Operación División</h3>");
+                        document.write("<code>" + val_1 + " / " + val_2 + " = " + (val_1 / val_2) + "</code>");
+                    } else {
+                        document.write("<h3>Error</h3>");
+                        document.write("<code>No se puede dividir entre 0</code>");
+                    }
+                    break;
+
+                default:
+                    document.write("<h3>Error</h3>");
+                    document.write("<code>Opción no válida</code>");
+                    break;
+            }
+        </script>
+    </body>
+</html>

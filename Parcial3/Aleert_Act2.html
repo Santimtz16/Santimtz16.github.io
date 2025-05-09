@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Unidad 3 || Actividad 1</title>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Santiago Martínez Reyes">
+        <meta name="Fecha" content="28/04/2025">
+        <meta name="Descripción" content="Alert, confirm & prompt">
+    </head>
+    <body>
+        <script>
+            document.write("UPSLP");
+        </script>
+        <h2>Unidad 3 || Actividad 1</h2>
+        <script>
+            if (window.confirm("¿Aún no has iniciado sesión?")) {
+                window.alert("Bienvenido al sitio...");
+            } else {
+                window.location.assign("https://www.facebook.com/login/device-based/regular/login/?login_attempt=1");
+            }
+        </script>
+        <h3>Unidad 3 :: Actividad 02 || Tema</h3>
+        <script>
+            let nombre = window.prompt("Dime tu nombre:");
+            document.write("Hola " + nombre + ", bienvenido a este sitio web.");
+        </script>
+    </body>
+</html>

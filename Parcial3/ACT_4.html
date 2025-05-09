@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Unidad 3 || Actividad 1</title>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Santiago Martínez Reyes">
+        <meta name="Fecha" content="28/04/2025">
+        <meta name="Descripción" content="JavaScript">
+    </head>
+    <body>
+        <h1>Unidad 3 || Act 04 ::Tema (JavaScript)</h1>
+        <ol>
+            <li id= "valor_1"><strong>UPSLP</strong></li>
+            <li id= "valor_2"></li>
+            <li id= "valor_3"></li>
+            <li id= "valor_4"></li>
+            <li id= "valor_5"></li>
+            <li id= "valor_6"></li>
+            <li id= "valor_7"></li>
+            <li id= "valor_8"><strong>ITESM (<i>San Luis Potosí</i>)</strong> </li>
+            <li id= "valor_9"></li>
+            <li id= "valor_10"></li>|
+        </ol>
+        <script>
+            // Asignación de valores a los elementos de la lista
+            document.getElementById("valor_3").textContent = 'UVM';
+
+            // Recuperación de valores de los elementos de la lista
+            let varTemp = document.getElementById("valor_1").textContent;
+            document.getElementById("valor_4").textContent = varTemp + "!!!";
+
+            //textContent
+            varTemp = document.getElementById("valor_8").textContent;
+            document.getElementById("valor_7").textContent = varTemp;
+            //innerText
+            varTemp = document.getElementById("valor_8").innerText;
+            document.getElementById("valor_9").textContent = varTemp;
+            //Inner HTML
+            varTemp = document.getElementById("valor_8").innerHTML;
+            document.getElementById("valor_10").textContent = varTemp;
+
+        </script>
+    </body>
+</html>
