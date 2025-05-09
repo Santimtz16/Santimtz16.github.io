@@ -7,16 +7,29 @@
         <meta name="Fecha" content="08/05/2025">
         <meta name="Descripción" content="Formulario">
         <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    </head> 
-    <body>
+    </head>
+    <script>
+      //Obtener acceso al formulario
+        function validarDatos() {
+            let varDatos = "Datos capturados:\n";
+            let VarForm = document.forms["frmRegistro"];
+            let VarNombre = VarForm["txt_nombre"];
+
+            //Accede a un control de formulario
+            varDatos += "Nombre de usuario: " + VarNombre.value + "\n";
+            
+            alert(varDatos);
+        }
+    </script>
+    <body align="center" style="background-color: #040a0f; color: white;">
         <h1>Unidad 3 || Act 05 ::Tema (Formulario)</h1>
         <form class="form-horizontal" name="formulario" method="get" action="#">
             <fieldset>
             
-            <!-- Form Name -->
+           
             <legend>Registro de Usuarios</legend>
             
-            <!-- Text input-->
+            
             <div class="form-group">
               <label class="col-md-4 control-label" for="txt_nombre">Nombre</label>  
               <div class="col-md-5">
@@ -25,7 +38,7 @@
               </div>
             </div>
             
-            <!-- Password input-->
+            
             <div class="form-group">
               <label class="col-md-4 control-label" for="passClave">Contraseña</label>
               <div class="col-md-4">
@@ -34,7 +47,7 @@
               </div>
             </div>
             
-            <!-- Prepended text-->
+            
             <div class="form-group">
               <label class="col-md-4 control-label" for="Tel_data">Telefono</label>
               <div class="col-md-4">
@@ -46,12 +59,12 @@
               </div>
             </div>
             
-            <!-- Search input-->
+            
             <div class="form-group">
               <label class="col-md-4 control-label" for="srch_correo">Correo</label>
               <div class="col-md-4">
                 <input id="srch_correo" name="srch_correo" type="search" placeholder="@upslp.edu.mx" class="form-control input-md">
-                <p class="help-block">help</p>
+                <p class="help-block">Ingrese su correo electronico</p>
               </div>
             </div>
             
