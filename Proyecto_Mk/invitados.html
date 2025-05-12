@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitados - Mortal Kombat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/mortal-kombat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/aptos" rel="stylesheet">
+    <style>
+        body {
+            background: url('invaa.png') repeat fixed center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Aptos', sans-serif;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.8);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-bottom: 2px solid #8B0000;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #FFD700 !important;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+        }
+
+        .character-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 900px;
+        }
+
+        .character-section img {
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin: 20px;
+            border: 3px solid #FFD700;
+        }
+
+        .character-text {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Mortal Kombat', sans-serif;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        h4, h5 {
+            color: white;
+        }
+
+        .content-section {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 700px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .table-dark {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .table-dark th, .table-dark td {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="portada.html">Kombatientes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="bienvenida.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="referencias.html">Referencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="kratos.jpg" alt="Kratos en MK9">
+            <div class="character-text">
+                <h2>Kratos</h2>
+                <h4>(Mortal Kombat 9 - Personaje exclusivo de PS3)</h4>
+                <p>El Dios de la Guerra hizo su aparición especial en Mortal Kombat 9 (2011) como personaje exclusivo para PlayStation 3. Kratos, el legendario espartano de la saga God of War, cruzó universos para participar en el torneo mortal.</p>
+                
+                <p>En el juego, Kratos mantiene sus movimientos característicos como el uso de las Espadas del Caos y su brutal estilo de combate. Aunque no forma parte oficialmente de la historia principal del juego, su inclusión fue un homenaje a los fans y una demostración del poder de PlayStation.</p>
+
+                <p>Los desarrolladores de NetherRealm Studios trabajaron estrechamente con Santa Monica Studio para asegurarse de que Kratos se sintiera auténtico en el universo de Mortal Kombat, manteniendo su apariencia, armas y movimientos característicos de God of War III.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Kratos en MK9</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plataforma</td>
+                        <td>Exclusivo PlayStation 3</td>
+                    </tr>
+                    <tr>
+                        <td>Armas principales</td>
+                        <td>Espadas del Caos</td>
+                    </tr>
+                    <tr>
+                        <td>Movimientos especiales</td>
+                        <td>Incluye ataques de God of War</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 únicas (incluye cabeza de Medusa)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="freddy.png" alt="Freddy Krueger en MK9">
+            <div class="character-text">
+                <h2>Freddy Krueger</h2>
+                <h4>(Mortal Kombat 9 - Personaje DLC)</h4>
+                <p>Freddy Krueger, el icónico asesino de la saga "A Nightmare on Elm Street", se unió a Mortal Kombat 9 (2011) como personaje descargable. Fue el primer personaje de terror en aparecer como invitado en la franquicia.</p>
+
+                <p>En esta versión, Freddy porta un guante con cuchillas en cada mano, diseñado específicamente para adaptarse al combate de Mortal Kombat. Su estilo de lucha es ágil, con ataques que hacen referencia a sus habilidades en los sueños.</p>
+
+                <p>El personaje fue incluido como un guiño a los fans del cine de terror, y su aparición abrió la puerta para futuras colaboraciones con franquicias similares.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Freddy Krueger en MK9</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plataforma</td>
+                        <td>Disponible en todas las plataformas (DLC)</td>
+                    </tr>
+                    <tr>
+                        <td>Armas principales</td>
+                        <td>Guantes con cuchillas dobles</td>
+                    </tr>
+                    <tr>
+                        <td>Movimientos especiales</td>
+                        <td>Teletransportes, ataques de fuego y de sueño</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 originales inspirados en su saga</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <!-- Sección de Jason Voorhees -->
+        <div class="character-section">
+            <img src="jason.jpg" alt="Jason Voorhees en MKX">
+            <div class="character-text">
+                <h2>Jason Voorhees</h2>
+                <h4>(Mortal Kombat X - Personaje DLC)</h4>
+                <p>Jason Voorhees, el brutal asesino de la saga "Viernes 13", fue uno de los personajes invitados en Mortal Kombat X como parte del Kombat Pack 1. Su inclusión expandió la presencia de íconos del terror en la franquicia.</p>
+
+                <p>Jason no habla, pero su imponente presencia y fuerza bruta hablan por él. Utiliza su clásico machete y puede regresar de la muerte gracias a una de sus variaciones. Cada estilo de combate ofrece una forma distinta de jugar con este monstruoso personaje.</p>
+
+                <p>Su diseño está basado en su apariencia de las películas clásicas, y su set de movimientos incluye referencias a sus asesinatos cinematográficos más conocidos.</p>
+            </div>
+        </div>
+
+        <!-- Tabla de datos -->
+        <div class="content-section">
+            <h3>Datos sobre Jason Voorhees en MKX</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plataforma</td>
+                        <td>Disponible como DLC en todas las plataformas</td>
+                    </tr>
+                    <tr>
+                        <td>Arma principal</td>
+                        <td>Machete</td>
+                    </tr>
+                    <tr>
+                        <td>Estilos de lucha</td>
+                        <td>Relentless, Slasher, Unstoppable</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 brutales (incluye decapitaciones y masacres)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <!-- Sección de Predator -->
+        <div class="character-section">
+            <img src="predator.png" alt="Predator en MKX">
+            <div class="character-text">
+                <h2>Predator</h2>
+                <h4>(Mortal Kombat X - Personaje DLC)</h4>
+                <p>Predator, el legendario cazador alienígena de la franquicia cinematográfica homónima, llegó a Mortal Kombat X como parte del Kombat Pack 1. Con su avanzada tecnología y brutalidad, fue un personaje muy esperado por los fans.</p>
+
+                <p>En el juego, Predator utiliza su camuflaje óptico, su cañón de plasma y cuchillas retráctiles, manteniéndose fiel a sus películas. Aunque no habla, su lenguaje alienígena y sonidos característicos están presentes durante los combates.</p>
+
+                <p>Su diseño está inspirado en su primera aparición en la película de 1987. Cada estilo de lucha permite explorar diferentes aspectos de su armamento, incluyendo trampas, tecnología alienígena y fuerza bruta.</p>
+            </div>
+        </div>
+
+        <!-- Tabla de datos -->
+        <div class="content-section">
+            <h3>Datos sobre Predator en MKX</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plataforma</td>
+                        <td>Disponible como DLC en todas las plataformas</td>
+                    </tr>
+                    <tr>
+                        <td>Armas principales</td>
+                        <td>Plasma Caster, cuchillas, disco</td>
+                    </tr>
+                    <tr>
+                        <td>Estilos de lucha</td>
+                        <td>Hunter, Warrior, Hish-Qu-Ten</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 brutales (incluye decapitación y explosión)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="Leatherface.png" alt="Leatherface en MKX">
+            <div class="character-text">
+                <h2>Leatherface</h2>
+                <h4>(Mortal Kombat X - Kombat Pack 2)</h4>
+                <p>Leatherface, el icónico asesino de la saga de terror "The Texas Chainsaw Massacre", fue incluido en Mortal Kombat X como parte del Kombat Pack 2. Su estilo brutal, errático y salvaje lo convierte en uno de los personajes más violentos del juego.</p>
+                
+                <p>Con su característica motosierra y su risa desquiciada, Leatherface cuenta con tres variaciones que exploran distintas formas de sadismo: "Killer", "Butcher" y "Pretty Lady", cada una con un enfoque distinto en armas o brutalidad.</p>
+
+                <p>Aunque no participa en el modo historia, su presencia intensifica el tono oscuro y sangriento del juego, ofreciendo una experiencia fiel a su franquicia original.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Leatherface en MKX</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>Kombat Pack 2 / DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Arma principal</td>
+                        <td>Motosierra</td>
+                    </tr>
+                    <tr>
+                        <td>Variaciones</td>
+                        <td>Killer, Butcher, Pretty Lady</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 únicos (incluyen brutalidades con la motosierra)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="Alien.png" alt="Alien en MKX">
+            <div class="character-text">
+                <h2>Alien (Xenomorph)</h2>
+                <h4>(Mortal Kombat X - Kombat Pack 2)</h4>
+                <p>El Xenomorph, criatura alienígena de la franquicia cinematográfica "Alien", hace su aparición en Mortal Kombat X como parte del Kombat Pack 2. Su inclusión introduce un terror biológico al universo MK.</p>
+                
+                <p>Este Alien nace de un Tarkatán, lo que le otorga elementos del ADN de Baraka, reflejados en sus ataques rápidos y salvajes. Sus variaciones cambian radicalmente su estilo de combate: "Acidic", "Tarkatan" y "Konjurer".</p>
+
+                <p>No está involucrado en la historia principal, pero su diseño, habilidades y brutalidad lo convierten en uno de los personajes invitados más temibles del juego.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Alien en MKX</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>Kombat Pack 2 / DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Bestial y veloz</td>
+                    </tr>
+                    <tr>
+                        <td>Variaciones</td>
+                        <td>Acidic, Tarkatan, Konjurer</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 únicos (uso de ácido y cola)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="Terminator.png" alt="Terminator en MK11">
+            <div class="character-text">
+                <h2>Terminator T-800</h2>
+                <h4>(Mortal Kombat 11 - Kombat Pack 1)</h4>
+                <p>El icónico cyborg de la saga "Terminator", interpretado por Arnold Schwarzenegger, aparece como personaje invitado en Mortal Kombat 11. Su diseño está basado en la película *Terminator: Dark Fate*.</p>
+
+                <p>El T-800 destaca por su estilo de combate implacable y resistencia sobrehumana. Puede absorber daño, utilizar armas de fuego, y cuenta con habilidades únicas como regresar en forma de endoesqueleto si es derrotado con Fatal Blow activado.</p>
+
+                <p>Su presencia en el juego fue celebrada por los fans, gracias a su fidelidad visual, movimientos devastadores y fatalities inspirados en las películas.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Terminator en MK11</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>Kombat Pack 1 / DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Apariencia</td>
+                        <td>Basado en *Dark Fate* (2019)</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Fuerza bruta y armas</td>
+                    </tr>
+                    <tr>
+                        <td>Habilidad especial</td>
+                        <td>Revive como Endoesqueleto</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 únicos (viaje en el tiempo y escopeta)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="joker.png" alt="Joker en MK11">
+            <div class="character-text">
+                <h2>Joker</h2>
+                <h4>(Mortal Kombat 11 - Kombat Pack 1)</h4>
+                <p>El archienemigo de Batman y uno de los villanos más icónicos de DC Comics, Joker, se une al sangriento universo de Mortal Kombat en MK11 como parte del Kombat Pack 1.</p>
+
+                <p>En el juego, Joker combina su humor retorcido con un estilo de combate engañosamente caótico, utilizando cuchillos, pistolas de juguete mortales y hasta su infame bastón. Su diseño y personalidad fueron adaptados para encajar con el tono oscuro de Mortal Kombat sin perder su esencia sarcástica.</p>
+
+                <p>Sus fatalities son particularmente crueles y teatrales, representando perfectamente su naturaleza impredecible. Es uno de los personajes invitados más carismáticos y aterradores del juego.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Joker en MK11</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>Kombat Pack 1 / DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Caótico, con armas y trampas</td>
+                    </tr>
+                    <tr>
+                        <td>Inspiración visual</td>
+                        <td>Versión moderna tipo cómic animado</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 únicos (payasadas letales)</td>
+                    </tr>
+                    <tr>
+                        <td>Personalidad</td>
+                        <td>Sarcástico, impredecible y sádico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="Spawn.png" alt="Spawn en MK11">
+            <div class="character-text">
+                <h2>Spawn</h2>
+                <h4>(Mortal Kombat 11 - Kombat Pack 1)</h4>
+                <p>Spawn, el antihéroe sobrenatural del cómic creado por Todd McFarlane, hace su debut en Mortal Kombat 11 como personaje jugable dentro del Kombat Pack 1.</p>
+
+                <p>Con su capa viviente, cadenas infernales y poder demoníaco, Spawn es uno de los personajes invitados más esperados por los fans. Su diseño fue cuidadosamente elaborado por NetherRealm Studios con la colaboración del propio McFarlane.</p>
+
+                <p>Spawn combina ataques a distancia, combate cuerpo a cuerpo brutal y un arsenal de habilidades infernales. Sus fatalities reflejan su oscuro origen y su brutalidad despiadada. Keith David, su actor original, regresa para darle voz.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Spawn en MK11</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>Kombat Pack 1 / DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Infernal, con cadenas, capa y armas</td>
+                    </tr>
+                    <tr>
+                        <td>Actor de voz</td>
+                        <td>Keith David</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 únicos (viscerales y demoníacos)</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 11 (2020)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="robocop.png" alt="Robocop en MK11">
+            <div class="character-text">
+                <h2>Robocop</h2>
+                <h4>(Mortal Kombat 11 - Kombat Pack 1)</h4>
+                <p>Robocop, el oficial de policía cibernético del futuro, hace su aparición en Mortal Kombat 11 como parte del Kombat Pack 1, siendo uno de los personajes invitados más icónicos de la cultura pop.</p>
+
+                <p>Con su armamento avanzado y su imponente armadura, Robocop trae una mezcla de ataques a distancia y poderosos combos de cuerpo a cuerpo. Además de su actitud fría y calculadora, este personaje viene equipado con su pistola auto-aim y su cañón de brazo.</p>
+
+                <p>Robocop es un personaje que no solo representa el control y la justicia, sino también la brutalidad de la violencia, y en Mortal Kombat 11, se enfrenta a los combatientes con su estilo único, basado en su paso por el cine de acción.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Robocop en MK11</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>Kombat Pack 1 / DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Armas de fuego, pistola auto-aim, cañón de brazo</td>
+                    </tr>
+                    <tr>
+                        <td>Actor de voz</td>
+                        <td>Joel McHale</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 (uno incluye la escena icónica de "Dead or alive, you're coming with me")</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 11 (2020)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="rambo.png" alt="Rambo en MK11">
+            <div class="character-text">
+                <h2>Rambo</h2>
+                <h4>(Mortal Kombat 11 - Kombat Pack 2)</h4>
+                <p>El legendario veterano de guerra, Rambo, se une al elenco de Mortal Kombat 11 como parte del Kombat Pack 2. El personaje basado en las películas de la saga de Rambo, trae consigo su estilo de combate rudo, usando trampas, flechas y su famosa habilidad para luchar con cualquier tipo de armamento.</p>
+
+                <p>En el juego, Rambo es un luchador a distancia y de control del terreno. Con su habilidad para usar trampas, cuchillos y su arco, no solo es peligroso en combates directos, sino también en emboscadas. Su brutalidad y fuerza lo hacen una máquina de guerra en el torneo mortal.</p>
+
+                <p>Rambo es el epítome del soldado solitario, conocido por su coraje y por ser un experto en guerrilla, llevando sus habilidades de la pantalla grande al universo Mortal Kombat.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Rambo en MK11</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>Kombat Pack 2 / DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Arcos, trampas, cuchillos</td>
+                    </tr>
+                    <tr>
+                        <td>Actor de voz</td>
+                        <td>David Hayter</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 (incluye una brutalidad con la famosa "flecha explosiva")</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 11 (2020)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="holander.jpg" alt="Homelander en MK1">
+            <div class="character-text">
+                <h2>Homelander</h2>
+                <h4>(Mortal Kombat 1 - DLC)</h4>
+                <p>Homelander, el superhéroe de la serie "The Boys", hace su debut en Mortal Kombat 1 como uno de los personajes descargables. En el juego, Homelander utiliza sus habilidades sobrehumanas para someter a sus oponentes, con su visión láser y vuelo como herramientas letales para acabar con cualquiera que se cruce en su camino.</p>
+
+                <p>Su estilo de combate es brutal y despiadado, usando tanto su fuerza sobrehumana como sus poderes para desatar ataques destructivos. Aunque en su serie se le presenta como un líder carismático y temido, en el universo de Mortal Kombat Homelander muestra su lado más oscuro y violento.</p>
+
+                <p>Homelander se enfrenta a sus enemigos con una mezcla de ataques a distancia, como su visión láser, y ataques cuerpo a cuerpo devastadores. Su presencia en MK1 representa la fusión de los mundos de los superhéroes y la brutalidad de Mortal Kombat.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Homelander en MK1</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Visión láser, vuelo, ataques sobrehumanos</td>
+                    </tr>
+                    <tr>
+                        <td>Actor de voz</td>
+                        <td>Anthony Starr</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 (incluye una brutalidad con visión láser)</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 1 (2023)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="Omni-Man.png" alt="Omni-Man en MK1">
+            <div class="character-text">
+                <h2>Omni-Man</h2>
+                <h4>(Mortal Kombat 1 - DLC)</h4>
+                <p>Omni-Man, el superhéroe de la serie "Invincible", entra en Mortal Kombat 1 como un personaje descargable. En el juego, Omni-Man utiliza su increíble fuerza y velocidad para dominar a sus oponentes. Su brutal estilo de combate combina ataques a distancia y cuerpo a cuerpo, mostrando su verdadera naturaleza como un guerrero extraterrestre.</p>
+
+                <p>Como un Viltrumite, Omni-Man es casi invencible, capaz de volar y destruir ciudades con su fuerza sobrehumana. En Mortal Kombat, sus movimientos especiales incluyen poderosos ataques de rayo y golpes devastadores que demuestran su superioridad física.</p>
+
+                <p>Su historia en MK1 es una de conquista y destrucción, siendo una amenaza peligrosa para el universo y cualquier oponente que se le cruce. Omni-Man es el epítome de la violencia y la disciplina de los Viltrumites en combate.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Omni-Man en MK1</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Fuerza sobrehumana, vuelo, rayos</td>
+                    </tr>
+                    <tr>
+                        <td>Actor de voz</td>
+                        <td>J.K. Simmons</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 (incluye un brutal ataque aéreo)</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 1 (2023)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="Peacemaker.png" alt="Peacemaker en MK1">
+            <div class="character-text">
+                <h2>Peacemaker</h2>
+                <h4>(Mortal Kombat 1 - DLC)</h4>
+                <p>Peacemaker, el antihéroe interpretado por John Cena, hace su entrada en Mortal Kombat 1 como un personaje descargable. Aunque su enfoque está en la paz, la forma en que la busca es a menudo letal y brutal. En el juego, Peacemaker combina su agilidad y armas de fuego para acabar con sus oponentes.</p>
+
+                <p>Como un hombre con un complejo código moral, Peacemaker demuestra que está dispuesto a hacer lo que sea necesario para alcanzar su objetivo, incluso si eso significa usar tácticas extremas y violentas. En Mortal Kombat, su estilo de lucha incluye disparos de largo alcance, golpes rápidos y ataques especiales con su icónica "pistola de paz".</p>
+
+                <p>Su historia en MK1 gira en torno a su participación en el torneo para cumplir su misión, demostrando que puede ser tanto un aliado como una amenaza, dependiendo de la situación.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Peacemaker en MK1</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Agilidad, disparos, uso de armas</td>
+                    </tr>
+                    <tr>
+                        <td>Actor de voz</td>
+                        <td>John Cena</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 (incluye ejecución con pistola)</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 1 (2023)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="scream.png" alt="Scream en MK1">
+            <div class="character-text">
+                <h2>Scream</h2>
+                <h4>(Mortal Kombat 1 - Personaje DLC)</h4>
+                <p>Scream, el icónico asesino en serie de la saga de películas de terror, hace su aparición en Mortal Kombat 1 como un personaje descargable. El asesino enmascarado, conocido por su amenaza constante y su risa aterradora, trae su característico estilo de combate, utilizando cuchillos y su habilidad para asustar a sus oponentes antes de realizar un mortal golpe.</p>
+
+                <p>En el juego, Scream utiliza su máscara y cuchillos como armas principales. Su estilo de lucha se centra en ataques rápidos, maniobras de sigilo y una mezcla de ataques cercanos con poderosos Fatalities. Aunque no posee poderes sobrenaturales, su agilidad y astucia lo convierten en un enemigo formidable.</p>
+
+                <p>La historia de Scream en MK1 gira en torno a su participación en el torneo, donde busca venganza y quiere expandir su legado de terror. Cada aparición en combate es una mezcla de suspenso, tensión y brutalidad.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Scream en MK1</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Sigilo, ataques rápidos con cuchillos</td>
+                    </tr>
+                    <tr>
+                        <td>Arma principal</td>
+                        <td>Cuchillos, máscara de terror</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 (incluye ataque con cuchillo y estrangulación)</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 1 (2023)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="character-section">
+            <img src="conan.png" alt="Conan el Bárbaro en MK1">
+            <div class="character-text">
+                <h2>Conan el Bárbaro</h2>
+                <h4>(Mortal Kombat 1 - Personaje DLC)</h4>
+                <p>Conan el Bárbaro, uno de los héroes más icónicos del género de fantasía, se une a Mortal Kombat 1 como un personaje descargable. El guerrero Cimmerio, conocido por su fuerza, destreza y su inquebrantable voluntad, entra en el torneo mortal buscando venganza y gloria.</p>
+
+                <p>En el juego, Conan se presenta con su estilo de combate brutal, utilizando su espada y otras armas de gran tamaño. Su habilidad para atacar con fuerza devastadora, junto con sus movimientos de lucha cuerpo a cuerpo, lo convierten en un luchador formidable en el escenario de Mortal Kombat.</p>
+
+                <p>La historia de Conan en MK1 está marcada por su deseo de derrotar a sus enemigos con pura fuerza, y a pesar de sus tácticas violentas, también muestra un lado de honor y lealtad a sus ideales.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h3>Datos sobre Conan el Bárbaro en MK1</h3>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Disponibilidad</td>
+                        <td>DLC</td>
+                    </tr>
+                    <tr>
+                        <td>Estilo de combate</td>
+                        <td>Fuerza bruta, ataques con espada</td>
+                    </tr>
+                    <tr>
+                        <td>Arma principal</td>
+                        <td>Espada y hacha</td>
+                    </tr>
+                    <tr>
+                        <td>Fatalities</td>
+                        <td>2 (incluye decapitación con espada)</td>
+                    </tr>
+                    <tr>
+                        <td>Primera aparición en MK</td>
+                        <td>Mortal Kombat 1 (2023)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
