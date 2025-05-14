@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Unidad 3 || Actividad 1</title>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Santiago Martínez Reyes">
+        <meta name="Fecha" content="08/05/2025">
+        <meta name="Descripción" content="Acción">
+        <style>
+            p {background-color: navy; color: greenyellow; border: 2px crimson dashed;}
+        </style>
+
+        <script>
+            function funcionClick() {
+                document.getElementById("varParrafo").innerHTML += "Hola Mundo!!! [Click]<br>";
+            }
+            function funcionDoble() {
+                document.getElementById("varParrafo").innerHTML += "Hola Mundo!!! [Doble Click]<br>";
+            }
+            function validarAcceso() {
+                if (navigator.cookieEnabled === true) {
+                    alert("Bienvenid@ a mi sitio Web !!!");
+                }
+            }
+            function mouseOver(obj) {
+                obj.style.backgroundColor = "Black";
+            }
+            function mouseOut(obj) {
+                obj.style.backgroundColor = "Navy";
+            }
+        </script>
+    </head>
+
+    <body onload="validarAcceso()">
+        <h1>Unidad 3 || Actividad 06</h1>
+        <h3>Presiona el botón para ejecutar la función</h3>
+        <button onclick="funcionClick()" ondblclick="funcionDoble()">Click aquí</button>
+        <p id="varParrafo"></p>
+    </body>
+</html>
